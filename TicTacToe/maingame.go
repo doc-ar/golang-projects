@@ -4,7 +4,10 @@ import (
 	"fmt"
 )
 
-var gridValues = [9]string{"X", " ", "O", " ", "X", " ", " ", " ", "X"}
+var gridValues = [9]string{" ", " ", " ", " ", " ", " ", " ", " ", " "}
+
+func requestSelection() {
+}
 
 func render() {
 	const seperator string = "- ⚬ - ⚬ -"
@@ -16,9 +19,6 @@ func render() {
 			fmt.Println(seperator)
 		}
 	}
-}
-
-func requestSelection() {
 }
 
 func checkWin(player string) bool {
@@ -35,7 +35,9 @@ func checkWin(player string) bool {
 
 	// Check win conditions against grid values
 	for i := 0; i < 8; i++ {
-		if gridValues[winConditions[i][0]] == player && gridValues[winConditions[i][1]] == player && gridValues[winConditions[i][2]] == player {
+		if gridValues[winConditions[i][0]] == player &&
+			gridValues[winConditions[i][1]] == player &&
+			gridValues[winConditions[i][2]] == player {
 			return true
 		}
 	}
@@ -45,5 +47,4 @@ func checkWin(player string) bool {
 func main() {
 	fmt.Println(checkWin("X"))
 	fmt.Println(checkWin("O"))
-	fmt.Print("\033[0;0H")
 }

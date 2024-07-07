@@ -1,5 +1,15 @@
+I find this table format for the game best
+
 X | O | X
 - ⚬ - ⚬ -
 X | O | X
 - ⚬ - ⚬ -
 X | O | X
+
+There are other formats but i decided to go with the one with circles
+
+X | X | X   X | X | X
+---------   - + - + -
+X | X | X   X | X | X
+---------   - + - + -
+X | X | X   X | X | X

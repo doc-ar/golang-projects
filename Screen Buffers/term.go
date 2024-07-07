@@ -1,8 +1,6 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func startAlternateScreenBuffer() {
 	fmt.Print("\033[?1049h") // Enable alternate screen buffer
@@ -15,19 +13,19 @@ func restoreOriginalScreenBuffer() {
 }
 
 func main() {
-	var buf bool = true
+	var loop bool = true
 	startAlternateScreenBuffer()
+	fmt.Printf("Welcome to my app!")
 
-	for buf {
+	for loop {
 		var exit string = "no"
 
-		fmt.Println("Welcome to my app!")
-		fmt.Print("Enter yes to exit: ")
+		fmt.Printf("\nEnter yes to exit: ")
 		fmt.Scanf("%s", &exit)
 
 		if exit == "yes" {
-			buf = false
-			restoreOriginalScreenBuffer()
+			loop = false
 		}
 	}
+	restoreOriginalScreenBuffer()
 }

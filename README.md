@@ -17,3 +17,8 @@ sudo apt-get install go
 and that's about it.
 
 > Project specific dependancies will be mentioned in their respected README files
+
+# Project Docs
+
+- [Tic Tac Toe](TicTacToe/README.md)
+- [Standard Library Webserver](go-webserver/README.md)

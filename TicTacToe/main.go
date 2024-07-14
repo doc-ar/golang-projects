@@ -133,14 +133,12 @@ func playTurn(player string) {
 }
 
 func winDialogue(player string) {
-	clearScreen()
 	fmt.Printf("\033[1m========================\033[0m\n")
 	fmt.Printf("\033[1m==== Player %s Wins =====\033[0m\n", player)
 	fmt.Printf("\033[1m========================\033[0m\n")
 }
 
 func drawDialogue() {
-	clearScreen()
 	fmt.Printf("\033[1m==============================\033[0m\n")
 	fmt.Printf("\033[1m==== The game was a draw =====\033[0m\n")
 	fmt.Printf("\033[1m==============================\033[0m\n")

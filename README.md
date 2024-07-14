@@ -1,6 +1,15 @@
+#### Table of Contents
+
+- [Introduction](#introduction)<br>
+- [Prerequisites](#prerequisites)<br>
+  - [Linux](#linux)
+  - [Windows](#windows)
+- [Project Docs](#project-docs)<br>
+- [Learning Resources](#learning-resources)<br>
+
 # Introduction
 
-When I started learning GO language I did not understand where to start. However, I quickly understood that the best way to learn is to build stuff I am interested in. So This repository contains all the projects I have created while learning GO language. I will be adding seperate README files for each project. They are listed below. The resources I am currently using or plan to use for learning go are listed at the bottom of this page.
+When I started learning GO language I did not understand where to start. However, I quickly understood that the best way to learn is to build stuff I am interested in. So This repository contains all the projects I have created while learning GO language. I will be adding seperate README files for each project. They are listed below.
 
 # Prerequisites
 
@@ -43,4 +52,14 @@ irm "https://christitus.com/win" | iex
 # Project Docs
 
 - [Tic Tac Toe](TicTacToe/README.md)
-- [Standard Library Webserver](go-webserver/README.md)
+- [Basic Webserver](go-webserver/README.md) <sup>This project does not do anything useful other than creating a basic webserver</sup>
+
+# Learning Resources
+
+These are the learning resources I've used or I am planning to use while learning go language
+
+- [Go by Example](https://gobyexample.com/) is my go to website for learning go syntax
+- [Golang Projects Playlist](https://youtube.com/playlist?list=PL5dTjWUk_cPYztKD7WxVFluHvpBNM28N9&si=H8EVRUZRGPX6UqxJ) by [Akhil Sharma](https://www.youtube.com/@AkhilSharmaTech) on Youtube
+- [Gophercises](https://gophercises.com/) is a website which with great project based exercises
+- [Let's Go Further](https://lets-go-further.alexedwards.net/) is a great website for learning advanced patterns for learning to create APIs and web apps
+- [Exercism](https://www.exercism.org) is a free learning website for a lot of languages. It uses interactive exercises to teach you.

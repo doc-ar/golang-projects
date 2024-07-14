@@ -16,7 +16,7 @@ sudo apt-get install go
 
 and that's about it.
 
-> Project specific dependancies will be mentioned in their respected README files
+> Project specific dependancies will be mentioned in their respective README files
 
 # Project Docs
 

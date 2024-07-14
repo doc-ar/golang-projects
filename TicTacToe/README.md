@@ -8,7 +8,7 @@ This is my first golang project and I learned a lot from it. I learned all of th
 
 # How to play
 
-Clone this repository anywhere in your machine. `cd` into the `TicTacToe` directory. You can either run the code directory or build and run it.
+Clone this repository anywhere in your machine. `cd` into the `TicTacToe` directory. You can either run the code directly or build and run it.
 
 ```
 go run .main.go

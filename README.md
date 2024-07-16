@@ -51,8 +51,9 @@ irm "https://christitus.com/win" | iex
 
 # Project Docs
 
-- [Tic Tac Toe](TicTacToe/README.md)
+- [Tic Tac Toe](TicTacToe/README.md) <sup>CLI game using alternate screen buffers</sup>
 - [Basic Webserver](go-webserver/README.md) <sup>This project does not do anything useful other than creating a basic webserver</sup>
+- [Go Todo list](go-todolist/README.md) <sup>A webapp using standard library</sup>
 
 # Learning Resources
 

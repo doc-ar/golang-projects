@@ -63,4 +63,5 @@ These are the learning resources I've used or I am planning to use while learnin
 - [Golang Projects Playlist](https://youtube.com/playlist?list=PL5dTjWUk_cPYztKD7WxVFluHvpBNM28N9&si=H8EVRUZRGPX6UqxJ) by [Akhil Sharma](https://www.youtube.com/@AkhilSharmaTech) on Youtube
 - [Gophercises](https://gophercises.com/) is a website which with great project based exercises
 - [Let's Go Further](https://lets-go-further.alexedwards.net/) is a great website for learning advanced patterns for learning to create APIs and web apps
+- [Learn Go with Tests](https://quii.gitbook.io/learn-go-with-tests) is a website to learn test driven development with go
 - [Exercism](https://www.exercism.org) is a free learning website for a lot of languages. It uses interactive exercises to teach you.

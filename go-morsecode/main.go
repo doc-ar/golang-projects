@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bufio"
 	"encoding/json"
 	"fmt"
 	"log"
@@ -20,6 +21,14 @@ func checkError(e error) {
 	}
 }
 
+func getSentenceMorseCode(sentence string) string {
+	var morseCode string
+	for _, character := range sentence {
+		morseCode += getMorseCode(string(character)) + " "
+	}
+	return morseCode
+}
+
 func getMorseCode(character string) string {
 	for _, code := range morseCodes {
 		if code.Name == character {
@@ -30,14 +39,22 @@ func getMorseCode(character string) string {
 }
 
 func main() {
-	jsonFileData, err := os.ReadFile("morse.json")
+	reader := bufio.NewReader(os.Stdin)
+	jsonFile, err := os.ReadFile("morse.json")
 	checkError(err)
-	_ = json.Unmarshal(jsonFileData, &morseCodes)
+	_ = json.Unmarshal(jsonFile, &morseCodes)
 
-	var char string
+	fmt.Print("Welcome to Morse Code Generator. Press ctrl+c to exit.")
 
-	fmt.Printf("Enter a character: ")
-	fmt.Scanf("%s", &char)
+	fmt.Println("\nLength of Arr: ", len(morseCodes))
 
-	fmt.Printf("Your morse code is: %s", getMorseCode(char))
+	var sentence string
+	for sentence != "_" {
+		fmt.Printf("\n\nEnter a sentence: ")
+		sentence, _ := reader.ReadString('\n')
+
+		morse := getSentenceMorseCode(sentence)
+
+		fmt.Printf("Your morse code is: %s", morse)
+	}
 }

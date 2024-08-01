@@ -1,4 +1,5 @@
 [
+  { "name": " ", "morse": "<SP>" },
   { "name": "a", "morse": ".-" },
   { "name": "b", "morse": "-..." },
   { "name": "c", "morse": "-.-." },
